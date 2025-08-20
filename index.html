@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easy Code (Like ABC) - Pearl Okoduwa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: linear-gradient(to bottom, #1a1a1a, #333);
+      color: #f9f9f9;
+    }
+    header {
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #ffcc00;
+    }
+    header h2 {
+      margin: 5px 0 0;
+      font-size: 1.3em;
+      font-weight: normal;
+      color: #ddd;
+    }
+    .section {
+      margin: 30px auto;
+      max-width: 600px;
+    }
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+    }
+    .circle-logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: #ffcc00;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3em;
+      font-weight: bold;
+      margin: 20px auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    audio {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 400px;
+    }
+    .lyrics {
+      text-align: left;
+      background: #c71a1a;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      line-height: 1.6;
+      font-size: 1.1em;
+      white-space: pre-line;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #ffcc00;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .download-btn:hover {
+      background-color: #ffaa00;
+    }
+    #countdown {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-top: 20px;
+      color: #00ffcc;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      background-color: #ff00b7;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Easy Code (Like ABC)</h1>
+    <h2>by Pearl Okoduwa</h2>
+    <div class="circle-logo">PO</div>
+  </header>
+
+  <!-- Album Cover -->
+  <section class="section">
+    <h3>Album Cover</h3>
+    <img src="album.png" alt="Album Cover">
+  </section>
+
+  <!-- Song -->
+  <section class="section">
+    <h3>Listen to the Song</h3>
+    <audio controls>
+      <source src="audio.ng.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <br>
+    <a class="download-btn" href="audio.ng.mp3" download>⬇ Download Song</a>
+  </section>
+
+  <!-- Lyrics Section -->
+  <section class="section">
+    <h3>Lyrics</h3>
+    <div class="lyrics">
+[Intro]
+[Verse]
+Title: Easy Code (Like ABC) Feelin’ stuck till Techcamp showed the way—
+Now code feels bright and day.
+
+[Verse 1]
+I once believed coding was a maze,
+A wild web of endless daze.
+But then I joined Techcamp to learn,
+Suddenly the barriers turned.
+
+[Pre-Chorus]
+Step by step, line by line,
+They helped me shape my curious mind.
+
+[Chorus]
+Coding now is easy as ABC,
+With Techcamp, I’ve set my spirit free.
+Every function, loop, and key—
+It’s like learning simple ABC.
+
+[Verse 2]
+With guidance clear and skillful care,
+I built first app, with tech to share.
+Each project grows just like a tree,
+Powered by knowledge — code so clean.
+
+[Bridge]
+No more fear, now I build and strive,
+From zero to coder, I came alive.
+Code flows smooth, I’ve found the key—
+Techcamp lights my creativity.
+
+[Yoruba Call & Response] (Spoken/Sung)
+Mo fẹ́ kọ́ — (I want to learn)
+Ẹ kọ́ pẹ̀lú mi — (Come learn with me)
+Àṣeyọrí wa níwájú — (Success is ahead)
+Jẹ́ ká kọ́de — (Let’s code!)
+
+[Final Chorus]
+Coding’s smooth like ABC,
+Thanks to Techcamp, now I believe.
+Turn ideas into reality—
+All begins with A‑B‑C.
+From thought to app, watch me shine,
+Techcamp helped me cross the line.
+Simple steps and a vision free—
+Coding’s now just ABC.
+    </div>
+  </section>
+
+  <!-- Countdown -->
+  <section class="section">
+    <h3>Next Release Countdown</h3>
+    <div id="countdown">Loading...</div>
+  </section>
+
+  <!-- Artist Picture -->
+  <section class="section">
+    <h3>About the Artist</h3>
+    <img src="artist.png" alt="Artist Picture">
+  </section>
+
+  <footer>
+    © 2025 Pearl Okoduwa - All Rights Reserved
+  </footer>
+
+  <!-- Countdown Script -->
+  <script>
+    // Set release date (change to your real date/time)
+    const releaseDate = new Date("Semptember 13, 2025 00:00:00").getTime();
+
+    const timer = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = releaseDate - now;
+
+      if (distance < 0) {
+        document.getElementById("countdown").innerHTML = "🎉 New Release is Out Now!";
+        clearInterval(timer);
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML = 
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    }, 1000);
+  </script>
+</body>
+</html>
