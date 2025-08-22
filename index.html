@@ -3,129 +3,362 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Easy Code (Like ABC) - Pearl Okoduwa</title>
-  <style>
+  <title>Pearl Okoduwa (A.K.A Shadow vibe)- Music</title>
+</section>
+<!-- Album Section -->
+<section class="album">
+  <h2>Shadow vibe</h2>
+  <div class="album-wrapper">
+    <img src="album.png" alt="Anime girl in school uniform album cover" class="album-cover">
+  </div>
+</section>
+<style>
+  .album-wrapper {
+    width: 800px;           /* Same as image */
+    height: 800px;          /* Same as image */
+    border-radius: 50%;     /* Circle shape */
+    background-color: #ffcc00; /* 🎨 Background color behind the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;       /* Ensures image stays inside circle */
+    margin: auto;           /* Centers the circle */
+    background-color:#ff69b4
+  }
+</style>
+<style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #1a1a1a, #333);
+      color: #fff;
       text-align: center;
-      background: linear-gradient(to bottom, #1a1a1a, #333);
-      color: #f9f9f9;
     }
-    header {
-      padding: 20px;
+
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: rgba(0,0,0,0.6);
+      position: sticky;
+      top: 0;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: #ffcc00;
-    }
-    header h2 {
-      margin: 5px 0 0;
-      font-size: 1.3em;
-      font-weight: normal;
-      color: #ddd;
-    }
-    .section {
-      margin: 30px auto;
-      max-width: 600px;
-    }
-    img {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
-    }
-    .circle-logo {
-      width: 150px;
-      height: 150px;
+    nav .logo {
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
       background: #ffcc00;
       color: #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3em;
+      font-size: 1.8em;
       font-weight: bold;
-      margin: 20px auto;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 15px #ffcc00;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 60px 20px;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #ffcc00;
+    }
+    .hero p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+
+    /* ALBUM */
+    .album {
+      margin: 40px auto;
+      max-width: 600px;
+    }
+    .album img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(255,255,255,0.3);
+    }
+
+    /* SONG PLAYER */
+    .songs {
+      margin: 40px auto;
+      max-width: 700px;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+      text-align: left;
+    }
+    .songs h2 {
+      text-align: center;
+      color: #ffcc00;
     }
     audio {
       margin-top: 20px;
       width: 100%;
-      max-width: 400px;
+      margin: 10px 0;
     }
     .lyrics {
-      text-align: left;
-      background: #c71a1a;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 20px;
-      line-height: 1.6;
-      font-size: 1.1em;
-      white-space: pre-line;
-    }
-    .download-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #ffcc00;
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      transition: background 0.3s;
-    }
-    .download-btn:hover {
-      background-color: #ffaa00;
-    }
-    #countdown {
-      font-size: 1.5em;
-      font-weight: bold;
-      margin-top: 20px;
-      color: #00ffcc;
-    }
-    footer {
-      margin-top: 40px;
+      background: rgba(0,0,0,0.4);
       padding: 15px;
-      background-color: #ff00b7;
+      border-radius: 10px;
+      margin-top: 10px;
+      font-size: 0.95em;
+      line-height: 1.5;
+      white-space: pre-wrap;
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: #111;
       font-size: 0.9em;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Easy Code (Like ABC)</h1>
-    <h2>by Pearl Okoduwa</h2>
-    <div class="circle-logo">PO</div>
-  </header>
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">PO</div>
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
 
-  <!-- Album Cover -->
-  <section class="section">
-    <h3>Album Cover</h3>
-    <img src="album.png" alt="Album Cover">
-  </section>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Pearl Okoduwa (A.K.A Shadow vibe)Music</h1>
+    <p>🎶 Feel the beats, live the code. Welcome to my world of sound!</p>
+</section>
+<!-- SONGS -->
+<section class="songs">
+  <h2>My Songs</h2>
 
-  <!-- Song -->
-  <section class="section">
-    <h3>Listen to the Song</h3>
-    <audio controls>
-      <source src="https://www.mureka.ai/song-detail/9uRe9jWZfT3SyE1peXVybW?is_from_share=1.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    <br>
-    <a class="download-btn" href="https://www.mureka.ai/song-detail/9uRe9jWZfT3SyE1peXVybW?is_from_share=1.mp3" download>⬇ Download Song</a>
-  </section>
+  <!-- Song 1 -->
+  <p><strong>Golden</strong></p>
+  <audio controls>
+    <source src="golden.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <div class="lyrics">
+  I was a ghost, I was alone
+어두워진 앞길 속에 (ah)
+Given the throne, I didn't know how to believe
+I was the queen that I'm meant to be
+I lived two lives, tried to play both sides
+But I couldn't find my own place
+Called a problem child 'cause I got too wild
+But now that's how I'm getting paid 끝없이 on stage
+I'm done hidin', now I'm shinin' like I'm born to be
+We dreamin' hard, we came so far, now I believe
+We're goin' up, up, up, it's our moment
+You know together we're glowing
+Gonna be, gonna be golden
+Oh, up, up, up with our voices
+영원히 깨질 수 없는
+Gonna be, gonna be golden
+Oh, I'm done hidin' now I'm shinin' like I'm born to be
+Oh, our time, no fears, no lies
+That's who we're born to be
+Waited so long to break these walls down
+To wake up and feel like me
+Put these patterns all in the past now
+And finally live like the girl they all see
+No more hiding, I'll be shining like I'm born to be
+'Cause we are hunters, voices strong, and I know I believe
+We're goin' up, up, up, it's our moment
+You know together we're glowing
+Gonna be, gonna be golden
+Oh, up, up, up, with our voices
+영원히 깨질 수 없는
+Gonna be, gonna be golden
+Oh, I'm done hidin', now I'm shining like I'm born to be
+Oh, our time, no fears, no lies
+That's who we're born to be
+You know we're gonna be, gonna be golden
+We're gonna be, gonna be
+Born to be, born to be glowin'
+밝게 빛나는 우린
+You know that it's our time, no fears, no lies
+That's who we're born to be 
+  </div>
+  <!-- Download button under song -->
+  <a class="download-btn" href="golden.mp3" download 
+     style="padding:12px;border:none;border-radius:25px;background:#ffcc00;color:#000;
+            font-weight:bold;text-decoration:none;display:inline-block;margin-top:10px;">
+     🎵 Download Golden
+  </a>
 
-  <!-- Lyrics Section -->
-  <section class="section">
-    <h3>Lyrics</h3>
-    <div class="lyrics">
+  <!-- Song 2 -->
+  <p><strong>Your Idol</strong></p>
+  <audio controls>
+    <source src="Your-Idol.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <div class="lyrics">
+   … Pray for me now
+Pray for me now (dies irae)
+Pray for me now (illa)
+Pray for me now (vos solve in)
+Pray for me now (favilla)
+Pray for me now (maledictus)
+Pray for me now (erus)
+Pray for me now (in flamas)
+Pray for me now (eternum)
+… I'll be your idol
+… Keeping you in check (uh), keeping you obsessed (uh)
+Play me on repeat 끝없이 in your head
+Anytime it hurts (uh), play another verse (uh)
+I can be your sanctuary
+Know I'm the only one right now (now)
+I will love you more when it all burns down
+More than power, more than gold (yeah)
+Yeah, you gave me your heart, now I'm here for your soul
+… I'm thе only one who'll love your sins
+Feel the way my voicе gets underneath your skin
+… Listen 'cause I'm preachin' to the choir
+Can I get the mic a little higher?
+Gimme your desire
+I can be the star you rely on (you rely on)
+내 황홀에 취해 you can't look away (yeah)
+Don't you know I'm here to save you?
+Now we runnin' wild
+Yeah, I'm all you need, I'ma be your idol
+… Uh
+Uh
+… Uh 빛이 나는 fame 계속 외쳐 I'm your idol
+Thank you for the pain 'cause it got me going viral
+Uh, yeah 낫지 않는 fever, makin' you a believer
+나를 위해 넌 존재하는 idol
+Don't let it show, keep it all inside
+The pain and the shame, keep it outta sight
+Your obsession feeds our connection
+이 순간 give me all your attention
+… You know I'm the only one who'll love your sins
+Feel the way my voice gets underneath your skin
+… Listen 'cause I'm preachin' to the choir
+Can I get the mic a little higher?
+Gimme your desire
+I can be the star you rely on (you rely on)
+내 황홀에 취해 you can't look away (yeah)
+Don't you know I'm here to save you?
+Now we runnin' wild
+Yeah, I'm all you need, I'ma be your idol
+… Be your idol
+… Living in your mind now
+Too late 'cause you're mine now
+I will make you free
+When you're all a part of me
+… preaching to the choir
+(Now) can I get the mic a little higher?
+Gimme your desire
+Watch me set your world on fire
+내 황홀에 취해 you can't look away
+No one is coming to save you
+Now we runnin' wild
+You're down on your knees, I'ma be your idol
+  </div>
+  <!-- Download button under song -->
+  <a class="download-btn" href="Your-Idol.mp3" download 
+     style="padding:12px;border:none;border-radius:25px;background:#ffcc00;color:#000;
+            font-weight:bold;text-decoration:none;display:inline-block;margin-top:10px;">
+     🎵 Download Your Idol
+  </a>
+
+  <!-- Song 3 -->
+  <p><strong>Free</strong></p>
+  <audio controls>
+    <source src="free.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <div class="lyrics">
+  I tried to hide, but something broke
+I tried to sing, couldn't hit the notes
+The words kept catching in my throat
+I tried to smile, I was suffocating though
+But here with you, I can finally breathe
+You say you're no good, but you're good for me
+I've been hoping to change, now I know we can change
+But I won't if you're not by my side
+Why does it feel right every time I let you in?
+Why does it feel like I can tell you anything?
+All the secrets that keep me in chains, and
+All the damage that might make me dangerous
+You got a dark side, guess you're not the only one
+What if we both tried fighting what we're running from?
+We can't fix it if we never face it
+What if we find a way to escape it?
+We could be free, free
+We can't fix it if we never face it
+Let the past be the past 'til it's weightless
+Oh, time goes by, and I lose perspective
+Yeah, hope only hurts, so I just forget it
+But you're breaking through all the dark in me
+When I thought that nobody could
+And you're waking up all these parts of me
+That I thought were buried for good
+Between imposter and this monster, I've been lost inside my head
+Ain't no choice when all these voices keep me pointing towards no end
+It's just easy when I'm with you
+No one sees me the way you do
+I don't trust it, but I want to
+I keep coming back to
+Why does it feel right every time I let you in?
+Why does it feel like I can tell you anything?
+We can't fix it if we never face it
+What if we find a way to escape it?
+We could be free, free
+We can't fix it if we never face it
+Let the past be the past 'til it's weightless
+Oh-oh, so take my hand, it's open (free, free)
+What if we heal what's broken? (Free, free)
+I tried to hide, but something broke
+I couldn't sing, but you give me hope
+We can't fix it if we never face it
+Let the past be the past 'til it's weightless
+  </div>
+  <!-- Download button under song -->
+  <a class="download-btn" href="free.mp3" download 
+     style="padding:12px;border:none;border-radius:25px;background:#ffcc00;color:#000;
+            font-weight:bold;text-decoration:none;display:inline-block;margin-top:10px;">
+     🎵 Download Free
+  </a>
+
+  <!-- Song 4 -->
+  <p><strong>Easy Code</strong></p>
+  <audio controls>
+    <source src="Easy-code.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <div class="lyrics">
 [Intro]
 [Verse]
-Title: Easy Code (Like ABC) Feelin’ stuck till Techcamp showed the way—
+Title: Easy Code (Like ABC)Feelin’ stuck till Techcamp showed the way—
 Now code feels bright and day.
 
 [Verse 1]
@@ -166,24 +399,31 @@ Jẹ́ ká kọ́de — (Let’s code!)
 Coding’s smooth like ABC,
 Thanks to Techcamp, now I believe.
 Turn ideas into reality—
-All begins with A‑B‑C.
-From thought to app, watch me shine,
+Turn ideas into reality—
 Techcamp helped me cross the line.
 Simple steps and a vision free—
 Coding’s now just ABC.
-    </div>
+Coding’s now just ABC.
+  </div>
+  <!-- Download button under song -->
+  <a class="download-btn" href="Easy-code.mp3" download 
+     style="padding:12px;border:none;border-radius:25px;background:#ffcc00;color:#000;
+            font-weight:bold;text-decoration:none;display:inline-block;margin-top:10px;">
+     🎵 Download Easy Code
+  </a>
+
+
+
+  <!-- ABOUT -->
+  <section id="about" class="songs">
+    <h2>About Us</h2>
   </section>
 
-  <!-- Countdown -->
-  <section class="section">
-    <h3>Next Release Countdown</h3>
-    <div id="countdown">Loading...</div>
-  </section>
 
-  <!-- Artist Picture -->
-  <section class="section">
-    <h3>About the Artist</h3>
-    <img src="artist.png" alt="Artist Picture">
+  <!-- CONTACT -->
+  <section id="contact" class="songs">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="okoduwapearl@gmail.com">okoduwapearl@gmail.com</a></p>
   </section>
 
   <footer>
@@ -218,7 +458,7 @@ Coding’s now just ABC.
 <section class="section" id="listen">
   <h3>Listen to the Song</h3>
   <audio controls>
-    <source src="https://www.mureka.ai/song-detail/9uRe9jWZfT3SyE1peXVybW?is_from_share=1.mp3" type="audio/mpeg">
+  <audio controls>
     Your browser does not support the audio element.
   </audio>
   <br>
@@ -233,3 +473,37 @@ Coding’s now just ABC.
 </section>
 </body>
 </html>
+</html>
+<!-- FORM -->
+<section id="tickets" class="songs">
+  <h2>🎟️ Reserve Tickets</h2>
+
+  <!-- Ticket Price Info -->
+  <div style="background:#222;color:#ffcc00;padding:15px;border-radius:12px;margin-bottom:20px;max-width:500px;margin:auto;line-height:1.6;">
+    <p><strong>Ticket Price:</strong> ₦100 per ticket</p>
+    <p><strong>Special Offer:</strong> Buy 2 tickets and get <span style="color:#0f0;">5% OFF</span> (₦190 for 2)</p>
+  </div>
+
+  <form action="#" method="POST" style="display:flex;flex-direction:column;gap:15px;max-width:500px;margin:auto;">
+    
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required 
+           style="padding:10px;border-radius:8px;border:none;">
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required 
+           style="padding:10px;border-radius:8px;border:none;">
+
+    <label for="tickets">Number of Tickets:</label>
+    <input type="number" id="tickets" name="tickets" min="1" max="10" required 
+           style="padding:10px;border-radius:8px;border:none;">
+
+    <label for="message">Message (Optional):</label>
+    <textarea id="message" name="message" rows="4" 
+              style="padding:10px;border-radius:8px;border:none;"></textarea>
+
+    <button type="submit" 
+            style="padding:12px;border:none;border-radius:25px;background:#ffcc00;color:#000;font-weight:bold;cursor:pointer;">
+      ✅ Submit Request
+    </button>
+  </form>
