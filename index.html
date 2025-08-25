@@ -147,6 +147,7 @@
     <ul>
       <li><a href="#about">About Us</a></li>
       <li><a href="#contact">Contact Us</a></li>
+      <li><a href="to buy tickets">Buy Your Tickets Here</a></li>
     </ul>
   </nav>
 
@@ -162,7 +163,7 @@
   <!-- Song 1 -->
   <p><strong>Golden</strong></p>
   <audio controls>
-    <source src="golden.mp3" type="audio/mpeg">
+    <source src="Golden.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
   <div class="lyrics">
@@ -208,7 +209,7 @@ You know that it's our time, no fears, no lies
 That's who we're born to be 
   </div>
   <!-- Download button under song -->
-  <a class="download-btn" href="golden.mp3" download 
+  <a class="download-btn" href="Golden.mp3" download 
      style="padding:12px;border:none;border-radius:25px;background:#ffcc00;color:#000;
             font-weight:bold;text-decoration:none;display:inline-block;margin-top:10px;">
      🎵 Download Golden
@@ -293,7 +294,7 @@ You're down on your knees, I'ma be your idol
   <!-- Song 3 -->
   <p><strong>Free</strong></p>
   <audio controls>
-    <source src="free.mp3" type="audio/mpeg">
+    <source src="Free.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
   <div class="lyrics">
@@ -343,7 +344,7 @@ We can't fix it if we never face it
 Let the past be the past 'til it's weightless
   </div>
   <!-- Download button under song -->
-  <a class="download-btn" href="free.mp3" download 
+  <a class="download-btn" href="Free.mp3" download 
      style="padding:12px;border:none;border-radius:25px;background:#ffcc00;color:#000;
             font-weight:bold;text-decoration:none;display:inline-block;margin-top:10px;">
      🎵 Download Free
@@ -417,6 +418,7 @@ Coding’s now just ABC.
   <!-- ABOUT -->
   <section id="about" class="songs">
     <h2>About Us</h2>
+    Hi guys It’s your girl Shadow vibe and I'm here to present to you the latest music ever. Listen and enjoy and don't forget to buy tickects for my next show.
   </section>
 
 
@@ -424,36 +426,44 @@ Coding’s now just ABC.
   <section id="contact" class="songs">
     <h2>Contact Us</h2>
     <p>Email: <a href="okoduwapearl@gmail.com">okoduwapearl@gmail.com</a></p>
-  </section>
-
+    <p>Number: <a href="09162747405">09162747405</a></p>
   <footer>
     © 2025 Pearl Okoduwa - All Rights Reserved
   </footer>
 
-  <!-- Countdown Script -->
-  <script>
-    // Set release date (change to your real date/time)
-    const releaseDate = new Date("Semptember 13, 2025 22:14:20:34").getTime();
+  <!-- HERO -->
+<section class="hero">
+  <h1>Pearl Okoduwa (A.K.A Shadow vibe) Music</h1>
+  <p>🎶 Feel the beats, live the code. Welcome to my world of sound!</p>
+  <!-- Countdown Timer -->
+  <h3 id="countdown" style="margin-top:20px; color:#ffcc00; font-size:1.5em;"></h3>
+</section>
 
-    const timer = setInterval(function() {
-      const now = new Date().getTime();
-      const distance = releaseDate - now;
+<!-- Countdown Script -->
+<script>
+  // September 13, 2025 at 22:14:20
+  const releaseDate = new Date("September 13, 2025 22:14:20").getTime();
 
-      if (distance < 0) {
-        document.getElementById("countdown").innerHTML = "🎉 New Release is Out Now!";
-        clearInterval(timer);
-        return;
-      }
+  const timer = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = releaseDate - now;
 
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    if (distance < 0) {
+      document.getElementById("countdown").innerHTML = "🎉 New Release is Out Now!";
+      clearInterval(timer);
+      return;
+    }
 
-      document.getElementById("countdown").innerHTML = 
-        days + "22 " + hours + "14 " + minutes + "20 " + seconds + "34 ";
-    }, 1000);
-  </script>
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML =
+      days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  }, 1000);
+</script>
+
   <!-- Song -->
 <section class="section" id="listen">
   <h3>Listen to the Song</h3>
@@ -464,12 +474,12 @@ Coding’s now just ABC.
   <br>
   <!-- Direct Link -->
   <p>
-    🎧 <a href="https://www.mureka.ai/song-detail/9uRe9jWZfT3SyE1peXVybW?is_from_share=1.com" target="_blank" style="color:#00ffcc; text-decoration:underline;">
+    🎧 <a href="Takedown.mp3" target="song" style="color:#00ffcc; text-decoration:underline;">
       Click here to listen on another platform
     </a>
   </p>
   <!-- Download Button -->
-  <a class="download-btn" href="https://www.mureka.ai/song-detail/9uRe9jWZfT3SyE1peXVybW?is_from_share=1.mp3" download>⬇ Download Song</a>
+  <a class="download-btn" href="Takedown.mp3" download>⬇ Download Song</a>
 </section>
 </body>
 </html>
