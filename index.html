@@ -515,5 +515,12 @@ Coding’s now just ABC.
     <button type="submit" 
             style="padding:12px;border:none;border-radius:25px;background:#ffcc00;color:#000;font-weight:bold;cursor:pointer;">
       ✅ Submit Request
-    </button>
+    </button><link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'https://wassup.app.n8n.cloud/webhook/d6964fc8-e603-49bb-bed1-9bcb86b8b3ef/chat'
+	});
+</script>
   </form>
